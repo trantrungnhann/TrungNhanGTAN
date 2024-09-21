@@ -1,0 +1,13 @@
+﻿@model GiaoHangMongoDB.Models.ViewModels.DanhMucThucAn
+
+<div class="container">
+    <h2>Xóa danh mục thức ăn</h2>
+    <div class="alert alert-danger">
+        Bạn có chắc muốn xóa danh mục: <strong>@Model.Name</strong>?
+    </div>
+    <form asp-action="Delete" method="post">
+        <input type="hidden" asp-for="MaDanhMuc" />
+        <button type="submit" class="btn btn-danger">Xóa</button>
+        <a href="@Url.Action("Index")" class="btn btn-secondary">Hủy</a>
+    </form>
+</div>

@@ -1,0 +1,16 @@
+﻿@model GiaoHangMongoDB.Models.ViewModels.ThucAn
+
+<div class="container">
+    <h2>Xóa món ăn</h2>
+
+    <div class="alert alert-danger">
+        Bạn có chắc muốn xóa món ăn này: <strong>@Model.TenThucAn</strong>?
+    </div>
+
+    <form asp-action="Delete" method="post">
+        <input type="hidden" asp-for="MaThucAn" />
+
+        <button type="submit" class="btn btn-danger">Xóa</button>
+        <a href="@Url.Action("Index")" class="btn btn-secondary">Hủy</a>
+    </form>
+</div>

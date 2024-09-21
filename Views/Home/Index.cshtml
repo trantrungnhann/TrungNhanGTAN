@@ -1,0 +1,19 @@
+﻿@model IEnumerable<GiaoHangMongoDB.Models.ViewModels.ThucAnDTO>
+
+<div class="container mt-5">
+    <h2 class="text-center">Danh sách món ăn</h2>
+    <div class="row">
+        @foreach (var thucAn in Model)
+        {
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">@thucAn.TenThucAn</h5>
+                        <p class="card-text">@thucAn.MoTa</p>
+                        <p class="card-text"><strong>Giá: @thucAn.Gia.ToString("N0") VNĐ</strong></p>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

@@ -1,0 +1,30 @@
+﻿@model IEnumerable<GiaoHangMongoDB.Models.ViewModels.DanhMucThucAn>
+
+<div class="container mt-5">
+    <h2 class="text-center">Danh mục thức ăn</h2>
+    <a href="@Url.Action("Create")" class="btn btn-primary mb-3">Thêm danh mục</a>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th scope="col">Mã Danh Mục</th>
+                <th scope="col">Tên danh mục</th>
+                <th scope="col">Mô tả</th>
+                <th scope="col" class="text-center">Hành động</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var danhMuc in Model)
+            {
+                <tr>
+                    <td>@danhMuc.MaDanhMuc</td> <!-- Sửa thành Id -->
+                    <td>@danhMuc.Name</td>
+                    <td>@danhMuc.Description</td>
+                    <td class="text-center">
+                        <a href="@Url.Action("Edit", new { id = danhMuc.MaDanhMuc })" class="btn btn-warning">Sửa</a>
+                        <a href="@Url.Action("Delete", new { id = danhMuc.MaDanhMuc })" class="btn btn-danger">Xóa</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

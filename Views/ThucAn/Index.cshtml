@@ -1,0 +1,32 @@
+﻿@model IEnumerable<GiaoHangMongoDB.Models.ViewModels.ThucAn>
+
+<div class="container mt-5">
+    <h2 class="text-center">Danh sách món ăn</h2>
+    <a href="@Url.Action("Create")" class="btn btn-primary mb-3">Thêm món ăn</a>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Tên món ăn</th>
+                <th scope="col">Mô tả</th>
+                <th scope="col">Giá</th>
+                <th scope="col" class="text-center">Hành động</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var thucAn in Model)
+            {
+                <tr>
+                    <td>@thucAn.MaThucAn</td>
+                    <td>@thucAn.TenThucAn</td>
+                    <td>@thucAn.MoTa</td>
+                    <td>@thucAn.Gia.ToString("N0") VNĐ</td>
+                    <td class="text-center">
+                        <a href="@Url.Action("Edit", new { id = thucAn.MaThucAn })" class="btn btn-warning">Sửa</a>
+                        <a href="@Url.Action("Delete", new { id = thucAn.MaThucAn })" class="btn btn-danger">Xóa</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,62 @@
+[
+  {
+    "Id": "66ed704fbc3b519f744be95f",
+    "MaDanhMuc": 1,
+    "Name": "Pizza",
+    "Description": "Các loại pizza khác nhau"
+  },
+  {
+    "Id": "66ed704fbc3b519f744be960",
+    "MaDanhMuc": 2,
+    "Name": "Mỳ Ý",
+    "Description": "Các món mỳ ý"
+  },
+  {
+    "Id": "66ed704fbc3b519f744be961",
+    "MaDanhMuc": 3,
+    "Name": "Bánh mì",
+    "Description": "Bánh mì kẹp, sandwich"
+  },
+  {
+    "Id": "66ed704fbc3b519f744be962",
+    "MaDanhMuc": 4,
+    "Name": "Sushi",
+    "Description": "Các món sushi Nhật Bản"
+  },
+  {
+    "Id": "66ed704fbc3b519f744be963",
+    "MaDanhMuc": 5,
+    "Name": "Đồ nướng",
+    "Description": "Các món thịt nướng"
+  },
+  {
+    "Id": "66ed704fbc3b519f744be964",
+    "MaDanhMuc": 6,
+    "Name": "Salad",
+    "Description": "Các loại salad"
+  },
+  {
+    "Id": "66ed704fbc3b519f744be965",
+    "MaDanhMuc": 7,
+    "Name": "Đồ ăn vặt",
+    "Description": "Các món ăn nhẹ, snack"
+  },
+  {
+    "Id": "66ed704fbc3b519f744be966",
+    "MaDanhMuc": 8,
+    "Name": "Đồ uống",
+    "Description": "Cà phê, trà, sinh tố"
+  },
+  {
+    "Id": "66ed704fbc3b519f744be967",
+    "MaDanhMuc": 9,
+    "Name": "Kem",
+    "Description": "Các loại kem tráng miệng"
+  },
+  {
+    "Id": "66ed704fbc3b519f744be968",
+    "MaDanhMuc": 10,
+    "Name": "Món chay",
+    "Description": "Thực phẩm chay"
+  }
+]
